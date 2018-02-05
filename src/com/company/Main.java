@@ -20,6 +20,7 @@ public class Main {
             }
         }
      System.out.println("Didžiausias skaičius : " +masmax(mas));
+        System.out.println("Mažiausias skaičius : " +masmin(mas));
     }
     public static int masmax(int mas[]){
         int max = mas[0];
@@ -29,5 +30,14 @@ public class Main {
             }
         }
         return max;
+    }
+    public static int masmin(int mas[]){
+        int min = mas[0];
+        for(int i = 1;i<mas.length;i++){
+            if (min > mas[i]){
+                min = mas[i];
+            }
+        }
+        return min;
     }
 }
